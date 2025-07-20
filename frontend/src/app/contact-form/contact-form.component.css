@@ -1,0 +1,102 @@
+.contact-form {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 40px;
+  background: linear-gradient(145deg, #ffffff, #f0f0f0);
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-form h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #222;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+/* Input Group */
+.contact-form .input-group {
+  position: relative;
+  margin-bottom: 28px;
+}
+
+.contact-form .input-group input,
+.contact-form .input-group textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background: #fff;
+  font-size: 15px;
+  outline: none;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+.contact-form .input-group label {
+  position: absolute;
+  top: 14px;
+  left: 16px;
+  background: #fff;
+  padding: 0 6px;
+  font-size: 15px;
+  color: #777;
+  pointer-events: none;
+  transition: 0.2s ease all;
+}
+
+.contact-form .input-group input:focus + label,
+.contact-form .input-group textarea:focus + label,
+.contact-form .input-group input:not(:placeholder-shown) + label,
+.contact-form .input-group textarea:not(:placeholder-shown) + label {
+  top: -10px;
+  left: 12px;
+  font-size: 13px;
+  color: #4CAF50;
+}
+
+/* Invalid input */
+.contact-form .input-group input.ng-invalid.ng-touched {
+  border-color: #d32f2f;
+}
+
+/* Buttons */
+.contact-form .form-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.contact-form button {
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact-form button[type="submit"] {
+  background: #4CAF50;
+  color: white;
+}
+
+.contact-form button[type="submit"]:hover {
+  background: #388e3c;
+  transform: scale(1.05);
+}
+
+.contact-form button[type="button"] {
+  background: #f44336;
+  color: white;
+}
+
+.contact-form button[type="button"]:hover {
+  background: #c62828;
+  transform: scale(1.05);
+}

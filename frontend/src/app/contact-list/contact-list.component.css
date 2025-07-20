@@ -1,0 +1,82 @@
+.contact-list {
+  padding: 30px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Main Button */
+.contact-list > button {
+  padding: 10px 20px;
+  margin-bottom: 25px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.contact-list > button:hover {
+  background-color: #388e3c;
+  transform: scale(1.03);
+}
+
+/* Table */
+.contact-list table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.contact-list th, 
+.contact-list td {
+  padding: 16px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+  font-size: 15px;
+}
+
+.contact-list th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+/* Action Buttons */
+.contact-list table button {
+  margin: 0 4px;
+  padding: 6px 14px;
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+/* Edit Button */
+.contact-list table button:first-child {
+  background-color: #2196F3;
+}
+
+.contact-list table button:first-child:hover {
+  background-color: #1976D2;
+  transform: scale(1.05);
+}
+
+/* Delete Button */
+.contact-list table button:last-child {
+  background-color: #f44336;
+}
+
+.contact-list table button:last-child:hover {
+  background-color: #c62828;
+  transform: scale(1.05);
+}

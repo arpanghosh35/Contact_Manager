@@ -1,0 +1,115 @@
+/* === Base Styling === */
+body {
+  font-family: 'Poppins', 'Arial', sans-serif;
+  margin: 0;
+  padding: 30px;
+  background-color:rgb(127, 124, 129);
+  line-height: 1.6;
+  color: #030303;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: rgb(92, 92, 92);
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* === Buttons === */
+button {
+  padding: 10px 20px;
+  margin: 8px 5px;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  background-color: #4CAF50;
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #388e3c;
+  transform: scale(1.05);
+}
+
+/* === Table === */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 30px;
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+th, td {
+  padding: 16px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+  font-size: 15px;
+}
+
+th {
+  background-color: #f2f2f2;
+  font-weight: 600;
+  color: #444;
+}
+
+/* === Form Styling === */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #222;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 15px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+
+.form-actions {
+  margin-top: 30px;
+}
+
+.error-message {
+  color: #e53935;
+  font-size: 0.85em;
+  margin-top: 6px;
+}
+
+/* === Responsive Layout === */
+ @media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+
+  th, td {
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  button {
+    padding: 8px 16px;
+    font-size: 13px;
+  }
+} 

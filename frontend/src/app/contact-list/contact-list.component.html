@@ -1,0 +1,27 @@
+<div class="contact-list">
+  <h2>Contacts</h2>
+  <button (click)="addContact()">Add New Contact</button>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Phone</th>
+        <th>Actions</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let contact of contacts">
+        <td>{{ contact.firstName }} {{ contact.lastName }}</td>
+        <td>{{ contact.email }}</td>
+        <td>{{ contact.phone || '-' }}</td>
+        <td>
+          <button (click)="editContact(contact._id!)">Edit</button>
+          <button (click)="deleteContact(contact._id!)">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
