@@ -3,7 +3,7 @@ body {
   font-family: 'Poppins', 'Arial', sans-serif;
   margin: 0;
   padding: 30px;
-  background-color:rgb(127, 124, 129);
+  background-color:whitesmoke;
   line-height: 1.6;
   color: #030303;
 }
@@ -11,8 +11,8 @@ body {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  background: rgb(92, 92, 92);
-  padding: 40px;
+  background: rgb(55, 35, 168);
+  padding: 20px;
   border-radius: 16px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }

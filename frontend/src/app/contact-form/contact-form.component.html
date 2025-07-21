@@ -27,7 +27,11 @@
     
     <div class="form-group">
       <label>Phone</label>
-      <input type="tel" formControlName="phone">
+      <input type="tel" formControlName="phone" required>
+      <div *ngIf="contactForm.get('phone')?.invalid && contactForm.get('phone')?.touched">
+        Valid phone number is required
+      </div>
+    
     </div>
     
     <div class="form-actions">
